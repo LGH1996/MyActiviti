@@ -5,7 +5,7 @@
     <endEvent id="sid-60c87dc3-692f-4722-a82c-a2d1c0b29e8b"/>
     <userTask id="sid-24a5f9d7-6f63-41c8-b35a-475afa3dc25b" activiti:assignee="lgh">
       <extensionElements>
-        <activiti:executionListener class="Class 1" event="start">
+        <activiti:executionListener class="Class 1" event="take">
           <activiti:field name="Name 1"/>
         </activiti:executionListener>
         <activiti:formProperty id="Property 1"/>

@@ -1,5 +1,6 @@
 package com.lgh.activiti;
 
+import org.activiti.engine.ProcessEngineConfiguration;
 import org.activiti.spring.ProcessEngineFactoryBean;
 import org.activiti.spring.SpringProcessEngineConfiguration;
 import org.springframework.context.annotation.Bean;
@@ -15,7 +16,7 @@ public class ActivitiConfiguration {
         SpringProcessEngineConfiguration springProcessEngineConfiguration = new SpringProcessEngineConfiguration();
         springProcessEngineConfiguration.setDataSource(dataSource);
         springProcessEngineConfiguration.setTransactionManager(transactionManager);
-        springProcessEngineConfiguration.setDatabaseSchemaUpdate("true");
+        springProcessEngineConfiguration.setDatabaseSchemaUpdate(ProcessEngineConfiguration.DB_SCHEMA_UPDATE_TRUE);
         return springProcessEngineConfiguration;
     }
 
